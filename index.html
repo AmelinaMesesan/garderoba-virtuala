@@ -1,59 +1,50 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Garderoba Virtuală</title>
-
-  <!-- Font Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- CSS personalizat -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <div class="site-title"><i class="fas fa-tshirt"></i> Garderoba Virtuală</div>
-    <div>
-      <a href="#"><i class="fas fa-user-circle"></i> Avatar</a>
-      <a href="#"><i class="fas fa-filter"></i> Filtru</a>
-    </div>
-  </nav>
-
-  <header class="page-header">
-    <h1>Ținuta Ta Perfectă</h1>
-    <p>Trage hainele pe avatar și creează-ți stilul unic!</p>
-  </header>
-
-  <main class="container">
-    <section class="gallery">
-      <!-- 12 haine -->
-      <div class="item"><img src="img/1.png" alt="Haină 1" draggable="true" /><div class="info">Mărime: S • Alb</div></div>
-      <div class="item"><img src="img/2.png" alt="Haină 2" draggable="true" /><div class="info">Mărime: M • Negru</div></div>
-      <div class="item"><img src="img/3.png" alt="Haină 3" draggable="true" /><div class="info">Mărime: L • Gri</div></div>
-      <div class="item"><img src="img/4.png" alt="Haină 4" draggable="true" /><div class="info">Mărime: S • Roz</div></div>
-      <div class="item"><img src="img/5.png" alt="Haină 5" draggable="true" /><div class="info">Mărime: M • Bej</div></div>
-      <div class="item"><img src="img/6.png" alt="Haină 6" draggable="true" /><div class="info">Mărime: S • Verde</div></div>
-      <div class="item"><img src="img/7.png" alt="Haină 7" draggable="true" /><div class="info">Mărime: L • Roșu</div></div>
-      <div class="item"><img src="img/8.png" alt="Haină 8" draggable="true" /><div class="info">Mărime: M • Albastru</div></div>
-      <div class="item"><img src="img/9.png" alt="Haină 9" draggable="true" /><div class="info">Mărime: S • Portocaliu</div></div>
-      <div class="item"><img src="img/10.png" alt="Haină 10" draggable="true" /><div class="info">Mărime: M • Lila</div></div>
-      <div class="item"><img src="img/11.png" alt="Haină 11" draggable="true" /><div class="info">Mărime: L • Bleumarin</div></div>
-      <div class="item"><img src="img/12.png" alt="Haină 12" draggable="true" /><div class="info">Mărime: S • Galben</div></div>
-    </section>
-
-    <section class="board">
-      <canvas id="canvas" width="400" height="500"></canvas>
-      <div class="controls">
-        <button onclick="resetBoard()"><i class="fas fa-trash"></i> Reset</button>
-        <a href="#" download><i class="fas fa-download"></i> Descarcă</a>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<div class="gallery">
+  <div class="item">
+    <img src="images/1.png" alt="Haină 1" draggable="true">
+    <div class="info">Mărime: S • Alb</div>
+  </div>
+  <div class="item">
+    <img src="images/2.png" alt="Haină 2" draggable="true">
+    <div class="info">Mărime: M • Negru</div>
+  </div>
+  <div class="item">
+    <img src="images/3.png" alt="Haină 3" draggable="true">
+    <div class="info">Mărime: L • Gri</div>
+  </div>
+  <div class="item">
+    <img src="images/4.png" alt="Haină 4" draggable="true">
+    <div class="info">Mărime: S • Roz</div>
+  </div>
+  <div class="item">
+    <img src="images/5.png" alt="Haină 5" draggable="true">
+    <div class="info">Mărime: M • Bej</div>
+  </div>
+  <div class="item">
+    <img src="images/6.png" alt="Haină 6" draggable="true">
+    <div class="info">Mărime: S • Verde</div>
+  </div>
+  <div class="item">
+    <img src="images/7.png" alt="Haină 7" draggable="true">
+    <div class="info">Mărime: L • Roșu</div>
+  </div>
+  <div class="item">
+    <img src="images/8.png" alt="Haină 8" draggable="true">
+    <div class="info">Mărime: M • Albastru</div>
+  </div>
+  <div class="item">
+    <img src="images/9.png" alt="Haină 9" draggable="true">
+    <div class="info">Mărime: S • Portocaliu</div>
+  </div>
+  <div class="item">
+    <img src="images/10.png" alt="Haină 10" draggable="true">
+    <div class="info">Mărime: M • Lila</div>
+  </div>
+  <div class="item">
+    <img src="images/11.png" alt="Haină 11" draggable="true">
+    <div class="info">Mărime: L • Bleumarin</div>
+  </div>
+  <div class="item">
+    <img src="images/12.png" alt="Haină 12" draggable="true">
+    <div class="info">Mărime: S • Galben</div>
+  </div>
+</div>
