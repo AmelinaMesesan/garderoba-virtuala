@@ -1,4 +1,4 @@
-/* Reset și bază globală */
+/* reset si baza globala */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,35 +20,29 @@ body {
   color: #fff;
   padding: 10px 20px;
 }
-
 .navbar .site-title {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
+}
+.navbar a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
 }
 
-.navbar .author {
-  font-weight: normal;
-  font-size: 1rem;
-}
-
-/* Header */
 .page-header {
   text-align: center;
   margin: 20px 0;
 }
-
 .page-header h1 {
   font-size: 2rem;
   margin-bottom: 0.5em;
 }
-
 .page-header p {
   color: #666;
 }
 
-/* Layout principal */
 .container {
   display: grid;
   grid-template-columns: 60% 30%;
@@ -56,7 +50,7 @@ body {
   padding: 0 20px 20px;
 }
 
-/* Galerie */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -65,7 +59,6 @@ body {
   max-height: 90vh;
   overflow-y: auto;
 }
-
 .gallery img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -73,23 +66,19 @@ body {
   border: 2px solid #ccc;
   border-radius: 6px;
   cursor: grab;
-  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, border-color 0.2s;
 }
-
 .gallery img:hover {
   transform: scale(1.05);
   border-color: #26c6da;
-  box-shadow: 0 0 8px rgba(38, 198, 218, 0.3);
 }
 
-/* Board + Canvas */
 .board {
   background: #fff;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 6px;
 }
-
 #canvas {
   width: 100%;
   height: auto;
@@ -97,19 +86,12 @@ body {
   border: 2px solid #bbb;
   display: block;
   margin-bottom: 10px;
-  transition: box-shadow 0.3s ease-in-out;
 }
 
-#canvas:hover {
-  box-shadow: 0 0 10px rgba(38, 198, 218, 0.5);
-}
-
-/* Butoane control */
 .controls {
   display: flex;
   gap: 8px;
 }
-
 .controls button,
 .controls a {
   padding: 6px 12px;
@@ -119,15 +101,12 @@ body {
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  font-weight: bold;
 }
-
 .controls button:disabled,
 .controls a:disabled {
   opacity: 0.5;
   cursor: default;
 }
-
 .controls button:hover:not(:disabled),
 .controls a:hover:not(:disabled) {
   background: #00acc1;
