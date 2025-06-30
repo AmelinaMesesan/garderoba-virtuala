@@ -6,17 +6,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  background: #fef6f9; /* pastel deschis */
   color: #333;
+  line-height: 1.5;
 }
 
-
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #a78bfa; /* mov pastel */
   color: #fff;
   padding: 10px 20px;
 }
@@ -24,16 +25,18 @@ body {
   font-weight: bold;
 }
 .navbar a {
-  color: #1da1f2;
+  color: #fcd34d; /* galben cald */
   text-decoration: none;
+  font-weight: 500;
 }
 .navbar a:hover {
   text-decoration: underline;
 }
 
+/* header */
 .page-header {
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 .page-header h1 {
   font-size: 2rem;
@@ -41,8 +44,10 @@ body {
 }
 .page-header p {
   color: #666;
+  font-size: 1rem;
 }
 
+/* container */
 .container {
   display: grid;
   grid-template-columns: 60% 30%;
@@ -50,7 +55,7 @@ body {
   padding: 0 20px 20px;
 }
 
-
+/* galerie */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -59,48 +64,73 @@ body {
   max-height: 90vh;
   overflow-y: auto;
 }
-.gallery img {
+
+/* item individual cu detalii */
+.item {
+  position: relative;
+}
+.item img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 2px solid #ccc;
+  border: 2px solid #e0d4fd;
   border-radius: 6px;
   cursor: grab;
   transition: transform 0.2s, border-color 0.2s;
 }
-.gallery img:hover {
+.item img:hover {
   transform: scale(1.05);
-  border-color: #26c6da;
+  border-color: #c084fc;
+}
+.item .info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 4px;
+  border-top: 1px solid #ccc;
+}
+.item:hover .info {
+  display: block;
 }
 
+/* panou de lucru */
 .board {
   background: #fff;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 #canvas {
   width: 100%;
   height: auto;
   background: #fafafa;
-  border: 2px solid #bbb;
+  border: 2px dashed #bbb;
   display: block;
   margin-bottom: 10px;
+  border-radius: 6px;
 }
 
+/* butoane control */
 .controls {
   display: flex;
   gap: 8px;
 }
 .controls button,
 .controls a {
-  padding: 6px 12px;
+  padding: 6px 14px;
   border: none;
-  background: #26c6da;
+  background: #f472b6; /* roz pastel */
   color: #fff;
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
   cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
 }
 .controls button:disabled,
 .controls a:disabled {
@@ -109,5 +139,5 @@ body {
 }
 .controls button:hover:not(:disabled),
 .controls a:hover:not(:disabled) {
-  background: #00acc1;
+  background: #ec4899; /* roz accent */
 }
