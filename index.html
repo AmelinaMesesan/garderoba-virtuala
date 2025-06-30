@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dressy</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <span class="site-title">DRESSY</span> <!-- font scris de mână -->
+    <!-- Parte de intrare pe site, welcome to Dressy, cu cortină -->
+    <span class="author">Wardrobe</span>
+  </nav>
+
+  <header class="page-header">
+    <h1>Dressy Clothes Wardrobe</h1>
+    <p>Trage piesele din stanga pe board-ul din dreapta si salvează outfit-ul!</p>
+  </header>
+
+  <main class="container">
+    <section class="gallery">
+        <img src="1.png"  alt="Piesa 1"  draggable="true" />
+        <img src="2.png"  alt="Piesa 2"  draggable="true" />
+        <img src="3.png"  alt="Piesa 3"  draggable="true" />
+        <img src="4.png"  alt="Piesa 4"  draggable="true" />
+        <img src="5.png"  alt="Piesa 5"  draggable="true" />
+        <img src="6.png"  alt="Piesa 6"  draggable="true" />
+        <img src="7.png"  alt="Piesa 7"  draggable="true" />
+        <img src="8.png"  alt="Piesa 8"  draggable="true" />
+        <img src="9.png"  alt="Piesa 9"  draggable="true" />
+        <img src="10.png" alt="Piesa 10" draggable="true" />
+        <img src="11.png" alt="Piesa 11" draggable="true" />
+        <img src="12.png" alt="Piesa 12" draggable="true" />
+    </section>
+
+    <section class="board">
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <div class="controls">
+        <button id="undoBtn">Undo</button>
+        <button id="redoBtn">Redo</button>
+        <button id="resetBtn">Reset</button>
+        <button id="saveBtn">Salvează as PNG</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
