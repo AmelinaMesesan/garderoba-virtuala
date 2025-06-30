@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dressy – Ținuta ta virtuală</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dressy</title>
+
+  <!-- Font scris de mână pentru titlu -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- Navigare -->
   <nav class="navbar">
-    <div class="site-title">Dressy</div>
-    <a href="#">Acasă</a>
+    <span class="site-title">DRESSY</span>
+    <span class="author">Wardrobe</span>
   </nav>
 
+  <!-- Header cu instrucțiuni -->
   <header class="page-header">
-    <h1>Ținuta Ta Perfectă</h1>
-    <p>Trage hainele pe avatar și creează-ți stilul unic!</p>
+    <h1>Dressy Clothes Wardrobe</h1>
+    <p>Trage piesele din stanga pe board-ul din dreapta și salvează outfit-ul!</p>
   </header>
 
-  <div class="container">
-    <div class="gallery">
-      <div class="item"><img src="1.png" alt="Haină 1" draggable="true"><div class="info">Mărime: S • Alb</div></div>
-      <div class="item"><img src="2.png" alt="Haină 2" draggable="true"><div class="info">Mărime: M • Negru</div></div>
-      <div class="item"><img src="3.png" alt="Haină 3" draggable="true"><div class="info">Mărime: L • Gri</div></div>
-      <div class="item"><img src="4.png" alt="Haină 4" draggable="true"><div class="info">Mărime: S • Roz</div></div>
-      <div class="item"><img src="5.png" alt="Haină 5" draggable="true"><div class="info">Mărime: M • Bej</div></div>
-      <div class="item"><img src="6.png" alt="Haină 6" draggable="true"><div class="info">Mărime: S • Verde</div></div>
-      <div class="item"><img src="7.png" alt="Haină 7" draggable="true"><div class="info">Mărime: L • Roșu</div></div>
-      <div class="item"><img src="8.png" alt="Haină 8" draggable="true"><div class="info">Mărime: M • Albastru</div></div>
-      <div class="item"><img src="9.png" alt="Haină 9" draggable="true"><div class="info">Mărime: S • Portocaliu</div></div>
-      <div class="item"><img src="10.png" alt="Haină 10" draggable="true"><div class="info">Mărime: M • Lila</div></div>
-      <div class="item"><img src="11.png" alt="Haină 11" draggable="true"><div class="info">Mărime: L • Bleumarin</div></div>
-      <div class="item"><img src="12.png" alt="Haină 12" draggable="true"><div class="info">Mărime: S • Galben</div></div>
-    </div>
+  <!-- Conținut principal -->
+  <main class="container">
+    <!-- Galerie imagini -->
+    <section class="gallery">
+      <img src="1.png"  alt="Piesa 1"  title="Piesa 1"  draggable="true" />
+      <img src="2.png"  alt="Piesa 2"  title="Piesa 2"  draggable="true" />
+      <img src="3.png"  alt="Piesa 3"  title="Piesa 3"  draggable="true" />
+      <img src="4.png"  alt="Piesa 4"  title="Piesa 4"  draggable="true" />
+      <img src="5.png"  alt="Piesa 5"  title="Piesa 5"  draggable="true" />
+      <img src="6.png"  alt="Piesa 6"  title="Piesa 6"  draggable="true" />
+      <img src="7.png"  alt="Piesa 7"  title="Piesa 7"  draggable="true" />
+      <img src="8.png"  alt="Piesa 8"  title="Piesa 8"  draggable="true" />
+      <img src="9.png"  alt="Piesa 9"  title="Piesa 9"  draggable="true" />
+      <img src="10.png" alt="Piesa 10" title="Piesa 10" draggable="true" />
+      <img src="11.png" alt="Piesa 11" title="Piesa 11" draggable="true" />
+      <img src="12.png" alt="Piesa 12" title="Piesa 12" draggable="true" />
+    </section>
 
-    <div class="board">
-      <canvas id="canvas" width="300" height="400"></canvas>
+    <!-- Canvas pentru design -->
+    <section class="board">
+      <canvas id="canvas" width="400" height="400"></canvas>
       <div class="controls">
-        <button id="clear">Curăță</button>
-        <a id="download" href="#" download="tinuta.png">Descarcă</a>
+        <button id="undoBtn">Undo</button>
+        <button id="redoBtn">Redo</button>
+        <button id="resetBtn">Reset</button>
+        <button id="saveBtn">Salvează as PNG</button>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
+  <!-- JS logică aplicație -->
   <script src="js/app.js"></script>
 </body>
 </html>
